@@ -1,0 +1,44 @@
+create table klant(
+klant_id int not null auto_increment=100,   // auto_increment begint bij 100.
+voornaam varchar(50), 
+achternaam varchar (51) not null,
+tussenvoegsel varchar( 10),
+email varchar (320),
+/// adres_id int() verwijzing naar andere tabel? 
+primary key(klant_id)
+);
+
+
+create table adres(
+klant_id int
+adres_id int
+straatnaam varchar(26),
+postcode varchar(6),
+huisnummer int(6),
+toevoeging varchar(6),
+woonplaats varchar(26),
+primary key(),
+foreign key()
+);
+
+
+create table bestelling(
+bestelling_id int not null auto_increment=2016,  / auto_increment begint bij 2016
+klant_id integer(8), 
+// more code??
+
+primary key(),
+foreign key()
+);
+
+
+create table artikel(
+artikel_id integer(10) not null, 
+artikel_naam varchar(20),
+artikel_aantal integer (4),
+artikel_prijs valuta (),
+primary key(artikel_id)
+foreign key()
+);
+
+ 
