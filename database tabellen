@@ -4,8 +4,10 @@ voornaam varchar(50),
 achternaam varchar (51) not null,
 tussenvoegsel varchar( 10),
 email varchar (320),
-/// adres_id int() verwijzing naar andere tabel? 
+// adres_id int() verwijzing naar andere tabel? 
+// als foreign key misschien
 primary key(klant_id)
+constraint klant unique(voornaam, achternaam, email?)
 );
 
 
@@ -26,9 +28,13 @@ create table bestelling(
 bestelling_id int not null auto_increment=2016,  / auto_increment begint bij 2016
 klant_id integer(8), 
 // more code??
+3 x artikel_id integer(10) not null,
+3 x artikel_naam varchar(20),
+3 x artikel_aantal integer(2),
+3 x artikel_prijs varchar(10),
 
 primary key(),
-foreign key()
+foreign key(klant_id) references klant(klant_id)
 );
 
 
