@@ -12,3 +12,5 @@ public class AnneProbeertWat {
 int gaat_lukken = 0;
 
 }
+public abstract class hierietsveranderen{
+method1();}
