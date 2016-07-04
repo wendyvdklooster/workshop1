@@ -7,3 +7,8 @@ String succes;
 
 
 }
+public class AnneProbeertWat {
+
+int gaat_lukken = 0;
+
+}
